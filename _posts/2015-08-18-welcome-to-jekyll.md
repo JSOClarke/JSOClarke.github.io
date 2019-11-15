@@ -17,6 +17,7 @@ Below is a a basic C++ program that finds the `Answer from a given Base and Expo
 
 
 {% highlight ruby %}
+
 #include<iostream>
 using namespace std;
 int power(int baseNum, int powNum){
@@ -45,6 +46,7 @@ int main(){
 	cout << base << " to the power of " << exponent << " is equal to "<< power(base,exponent) << endl; // passing the function /power with the two variable base and exponent.
 	return 0;
 }
+
 {% endhighlight %}
 
 Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
@@ -52,3 +54,5 @@ Check out the [Jekyll docs][jekyll] for more info on how to get the most out of 
 [jekyll]:      http://jekyllrb.com
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-help]: https://github.com/jekyll/jekyll-help
+
+check if changes are made
