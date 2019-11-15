@@ -49,4 +49,5 @@ int main(){
 
 {% endhighlight %}
 
+i have left notes in the website to show how the program works.
 
