@@ -16,7 +16,7 @@ The website im using to learn is `freecodecamps` youtube video `Algorithm Course
 Below is a a basic C++ program that finds the `Answer from a given Base and Exponent `.
 
 
-{% highlight ruby %}
+{% highlight c++ %}
 
 #include<iostream>
 using namespace std;
