@@ -144,10 +144,9 @@ std::cout << p_c; // prints the contents of the variable c, which in this case i
 
 ![Pointers Represented](http://i2.wp.com/mycodinglab.com/wp-content/uploads/2013/08/Screen-Shot-2013-08-02-at-5.30.53-PM.png?resize=406%2C206)
 
-
 >Best way to think is that p* is the alias of the variable its pointing to.
 
-Arrays
+## Arrays
 
 A collection of elements of the same type. Given any type T and a constant N, a variable of type T[N], holds an array of `N` elements each of type `T`.
 
@@ -179,13 +178,11 @@ A two-dimensional array is implemented as an “`array of arrays”.
 
 >An elements is indexed as A[i][j], where `i` is the range between 0-15, and `j` between the range 0, 29.
 
-Declaring array Rules : 
+Declaring Array rules : 
 
 Initializes its values by enclosing in curly braces `({.....})`
 
 The size of the array does not need to be specified.
-
-Code#
 
 {%highlight c++%}
 
