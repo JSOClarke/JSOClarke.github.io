@@ -96,7 +96,7 @@ To force a literal to be a float, add the suffix `f` or `F`, as in 1.234e4F or 5
 
 END OF 1.1.2 SECTION
 
-{% gist mmistakes/6589546 %}
+
   
 
 
