@@ -110,7 +110,7 @@ There are two main operators used to manipulate pointers. The first returns the 
 
 *Second task is performed by by the `dereferencing `
 
-{% hightlight c++ %}
+{% highlight c++ %}
 
 #include<iostream>
 
