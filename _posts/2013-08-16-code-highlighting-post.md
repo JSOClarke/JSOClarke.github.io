@@ -169,7 +169,7 @@ m[2] = 4; // defines the variable m’s second element
 
 cout << f[m[2]]; // as m[2] holds the value 4, so now identical to cout << f[4]
 
-{%endhighlight%} 
+{% endhighlight %} 
 
 After once declared you cannot increase the number of elements in an array. As consistent with C++ 's general philosophy, there is no built in run time check for array subscripting (research topic)
 
@@ -187,7 +187,7 @@ The size of the array does not need to be specified.
 
 Code#
 
-{%hightlight c++%}
+{%highlight c++%}
 
 int[] = {10,11,12,13}; // declares and initializes a[4]
 
