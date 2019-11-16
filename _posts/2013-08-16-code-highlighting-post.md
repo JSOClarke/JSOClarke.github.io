@@ -82,7 +82,7 @@ enum Mood {HAPPY =3, SAD = 1, ANXIOUS = 4, SLEEPY = 2};
 
 Day today = THURSDAY;  // as enum hold int value from 0 only the elements from 1-5 can be chosen MON,…,SAT
 Mood myMood = SLEEPY; // myMood may be HAPPY,…….,SLEEPY
-{ endhighlight } 
+{% endhighlight %} 
 
 As a rule of thumb enum names and other constants are written in all CAPITAL LETTERS.
 
@@ -94,6 +94,7 @@ By default, floating point Literals, such as 3.14159 and -1234.567 are type doub
 
 To force a literal to be a float, add the suffix `f` or `F`, as in 1.234e4F or 5.3f
 
+END OF 1.1.2 SECTION
   
 
 
