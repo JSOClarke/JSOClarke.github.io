@@ -95,6 +95,116 @@ By default, floating point Literals, such as 3.14159 and -1234.567 are type doub
 To force a literal to be a float, add the suffix `f` or `F`, as in 1.234e4F or 5.3f
 
 END OF 1.1.2 SECTION
+
+## Pointer
+
+Every program variable is stored in the computer's memory at some location or `Address`
+
+A pointer is a variable that holds the value of the address.
+
+> For example, `int*` denotes a pointer to an integer.
+
+There are two main operators used to manipulate pointers. The first returns the specific address of the given object in the memory, the second returns the contents of the given address.
+
+* First task is performed by the `addressof` operator ‘&’
+
+*Second task is performed by by the `dereferencing `
+
+{% hightlight c++%}
+
+#include<iostream>
+
+int main(){
+
+int a = 6; // declares and stores values of 6 in variable a
+
+int* p_a = &a; // declares the int pointer variable p_a as the address of variable a by using `&`
+
+std::cout << p_a; // prints the address/location that variable is stored in the memory
+
+int b = 7; // declares and stores values of 7 in variable b
+
+int* p_b = *b; // declares the int pointer variable p_b as the address of variable a by using `*`
+
+std::cout << p_b; // prints the contents of the variable b, which in this case is the value
+
+// if both of the operators are used together will cancel out.
+
+int c = 9; // declares and stores values of 9 in variable c
+
+int* p_c = &*c; // declares the int pointer variable p_c as the address of variable a by using `&`
+
+std::cout << p_c; // prints the contents of the variable c, which in this case is the value
+
+}
+
+{% endhighlight %}
+
+## Visual Representation 
+
+
+
+>Best way to think is that p* is the alias of the variable its pointing to.
+
+Arrays
+
+A collection of elements of the same type. Given any type T and a constant N, a variable of type T[N], holds an array of `N` elements each of type `T`.
+
+Each element is referenced by its index, number from 0 to N-1
+
+> For example, an array of integers {1,2,3,4,5}, you call the first element the `Zeroth` and so (0,1,2,3) respectively
+
+Here are some examples of array declarations : 
+
+{%highlight c++%}
+
+double f[5]; // creates a type array of 5 doubles: f[0], f[4] look above for explanation 
+
+int m[10]; // creates a type array of 10 integers: f[0]...f[9]
+
+f[4] = 2.5; // defines the variable f’s fourth element
+
+m[2] = 4; // defines the variable m’s second element
+
+cout << f[m[2]]; // as m[2] holds the value 4, so now identical to cout << f[4]
+
+{%endhighlight%} 
+
+After once declared you cannot increase the number of elements in an array. As consistent with C++ 's general philosophy, there is no built in run time check for array subscripting (research topic)
+
+A two-dimensional array is implemented as an “`array of arrays”.
+
+> For examples, int A[15][30]; declares A to be a array of 30 objects, each of which is an array of 15 integers. 
+
+>An elements is indexed as A[i][j], where `i` is the range between 0-15, and `j` between the range 0, 29.
+
+Declaring array Rules : 
+
+Initializes its values by enclosing in curly braces `({.....})`
+
+The size of the array does not need to be specified.
+
+Code#
+
+{%hightlight c++%}
+
+int[] = {10,11,12,13}; // declares and initializes a[4]
+
+bool b = {false, true}; // declares and initializes b[2]
+
+char c = {‘c’, ‘b’, ‘t’} // declares and initializes c[3]
+
+{%endhighlight%}
+
+As an array can be any type you can declare an array of pointers to integers.
+
+> For example, int* r[17] declares an array r consisting of 17 pointers to objects of type `int`.
+
+As before you can deference an element of the array by using `*` operator 
+
+>For example,*r[16] is the value of the integer pointed to by the last element
+
+ENDED AT START OF POINTER AND ARRAY SECTION
   
 
 
