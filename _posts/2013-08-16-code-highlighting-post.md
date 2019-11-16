@@ -46,7 +46,11 @@ Every character is associated with an integer code. The function int(ch) returns
 
 An int variable holds a integer. Integers come in three sizes : short int, (plain) int and long int. Short and long are synonyms of short int and long int respectively. 
 
-Decimal number like 0,25,98764, and -3 are all integers `If all the digits after the decimal point are zeroes, the number is an integer. The suffix `I` or `L` can be added to indicate a long integer eg. 123456778`L`. 
+Decimal number like 0,25,98764, and -3 are all integers 
+
+`If all the digits after the decimal point are zeroes, the number is an integer` 
+
+The suffix `I` or `L` can be added to indicate a long integer eg. 123456778`L`. 
 
 * Suffix - is at the `End` 
 * Prefix - is a the `Start`
@@ -92,6 +96,7 @@ To force a literal to be a float, add the suffix `f` or `F`, as in 1.234e4F or 5
 
 END OF 1.1.2 SECTION
 
+{% gist mmistakes/6589546 %}
   
 
 
