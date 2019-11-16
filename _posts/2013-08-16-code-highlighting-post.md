@@ -7,7 +7,7 @@ modified: 2019-11-15
 comments: true
 ---
 
-##1.1.2 Fundamental types
+## 1.1.2 Fundamental types
 
 Basic data types : or INTEGRAL TYPES
 
