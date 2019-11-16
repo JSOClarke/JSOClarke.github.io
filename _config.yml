@@ -39,7 +39,7 @@ owner:
   bio: "A documentation website for my self-study of Computer Science."
   email:
   disqus-shortname:
-  twitter: #JSOClarke
+  twitter: JSOClarke
   facebook: #username
   google:
     plus: #username
@@ -48,7 +48,7 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: JSOClarke 
   gitlab: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
@@ -61,7 +61,7 @@ owner:
   foursquare: #username
   steam: #username
   dribbble: #username
-  youtube: #username
+  youtube: JSOClarke
   soundcloud: #username
   weibo: #username
   flickr: #username
