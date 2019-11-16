@@ -76,13 +76,13 @@ An enumeration is a user-defined type that can hold any set of discrete values.
 
 Once defined, behave much like an integer type, a common use is to provide meaningful names to a set of related values. Each element is assigned to an integer value.By default they count up from 0, but can be changed.
 
-{%highlight c++%}
+{% highlight c++ %}
 enum Day {SUN, MON, TUES, WEDNESDAY, THURSDAY, FRIDAY};
 enum Mood {HAPPY =3, SAD = 1, ANXIOUS = 4, SLEEPY = 2}; 
 
 Day today = THURSDAY;  // as enum hold int value from 0 only the elements from 1-5 can be chosen MON,…,SAT
 Mood myMood = SLEEPY; // myMood may be HAPPY,…….,SLEEPY
-{endhighlight}
+{ endhighlight } 
 
 As a rule of thumb enum names and other constants are written in all CAPITAL LETTERS.
 
