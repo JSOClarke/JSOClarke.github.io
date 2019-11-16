@@ -140,8 +140,9 @@ std::cout << p_c; // prints the contents of the variable c, which in this case i
 
 {% endhighlight %}
 
-## Visual Representation 
-
+## Visual Representation
+ 
+![Pointers Represented](http://i2.wp.com/mycodinglab.com/wp-content/uploads/2013/08/Screen-Shot-2013-08-02-at-5.30.53-PM.png?resize=406%2C206)
 
 
 >Best way to think is that p* is the alias of the variable its pointing to.
