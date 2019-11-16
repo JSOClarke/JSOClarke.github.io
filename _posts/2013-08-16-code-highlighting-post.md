@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 1. A C++ PRIMER
+title: 1. A C++ Primer
 excerpt: "A write up of notes made from the first section of Data Structures and Algorithms book"
 categories: [Data Structures and Algorithms]
 modified: 2019-11-15
