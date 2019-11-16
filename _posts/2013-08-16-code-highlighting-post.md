@@ -110,7 +110,7 @@ There are two main operators used to manipulate pointers. The first returns the 
 
 *Second task is performed by by the `dereferencing `
 
-{% hightlight c++%}
+{% hightlight c++ %}
 
 #include<iostream>
 
@@ -141,7 +141,7 @@ std::cout << p_c; // prints the contents of the variable c, which in this case i
 {% endhighlight %}
 
 ## Visual Representation
- 
+
 ![Pointers Represented](http://i2.wp.com/mycodinglab.com/wp-content/uploads/2013/08/Screen-Shot-2013-08-02-at-5.30.53-PM.png?resize=406%2C206)
 
 
