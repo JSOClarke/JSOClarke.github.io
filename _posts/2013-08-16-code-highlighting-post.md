@@ -255,7 +255,7 @@ cout << u ; // print the string variable u
 > STL string can also be indexed like an array and give number of characters in a string by `(variable_name).size`
 
 
-{%highlight%}
+{%highlight c++%}
 
 ///.....
 
