@@ -208,7 +208,7 @@ There is an inherit connection between pointers and arrays, brought over from th
 
 >  ////.. = means that small pieces of code missed to get to the point  eg. #include<iostream>
 
-{%highlight c++%}
+{% highlight c++ %}
 
 ////....
 
@@ -220,7 +220,7 @@ char* q = &c[0]; // char pointer q directed to the address of c[0] *=>c[0] 
 
 cout << c[2] <<p[2] <<q[2] <<endl; // prints out the 2nd element in array *=> ttt
 
-{%endhighlight%}
+{% endhighlight %}
 
 
 ## Strings
@@ -229,7 +229,7 @@ cout << c[2] <<p[2] <<q[2] <<endl; // prints out the 2nd element in array *=> tt
 String literals, such as "Hello world" is represented by a fixed-length array of characters that ends with a null character, these character strings are called `C-Style Strings`. This however doesn't support string types like concatenation and comparison (lexicographical).
 
 
-This is the reason that C++provides a string type as part of its STL `Standard Template Libary`. In order to use these string you need to include the header <string> and adding {%hightlight c++%}using std::string; {%endhighlight%}
+This is the reason that C++provides a string type as part of its STL `Standard Template Libary`. In order to use these string you need to include the header <string> and adding {%highlight c++%}using std::string; {%endhighlight%}
 
 
 > STL strings are able to be concatenated and they may be compared with eachother levciographically(or dictionary) order. 
