@@ -200,11 +200,175 @@ As before you can deference an element of the array by using `*` operator
 
 >For example,*r[16] is the value of the integer pointed to by the last element
 
-ENDED AT START OF POINTER AND ARRAY SECTION
-  
+## Pointer and Arrays
 
 
+There is an inherit connection between pointers and arrays, brought over from the C language. The name of the array is equivalent to a pointer to the array's initial element and vise versa. Below is an example of how it looks : 
 
 
+>  ////.. = means that small pieces of code missed to get to the point  eg. #include<iostream>
+
+{%highlight c++%}
+
+////....
+
+char c[] = {'c', 'a', 't'}; // creates and array c with 3 elements 
+
+char* p = c; // char pointer p directed to array c  *=> c[0]
+
+char* q = &c[0]; // char pointer q directed to the address of c[0] *=>c[0] 
+
+cout << c[2] <<p[2] <<q[2] <<endl; // prints out the 2nd element in array *=> ttt
+
+{%endhighlight%}
 
 
+## Strings
+
+
+String literals, such as "Hello world" is represented by a fixed-length array of characters that ends with a null character, these character strings are called `C-Style Strings`. This however doesn't support string types like concatenation and comparison (lexicographical).
+
+
+This is the reason that C++provides a string type as part of its STL `Standard Template Libary`. In order to use these string you need to include the header <string> and adding {%hightlight c++%}using std::string; {%endhighlight%}
+
+
+> STL strings are able to be concatenated and they may be compared with eachother levciographically(or dictionary) order. 
+
+
+{%hightlight c++%}
+
+string s = "to be"; // declares and defines string
+
+string t = "not " + s; // declares and defines string with concatination
+
+string u = s + " or " + t; // declares and defines strin with concatinatino
+
+if (s>t) // conditon to be meet, LEXIOGRAPHICALLY, easy way to think compares first leter( a = 0, b = 1,) so (c)arrot > (a)pple Lexiographically just 2>0 element wise 
+
+cout << u ; // print the string variable u
+
+{%endhighlight%}
+
+
+> STL strings also have other properties, one of which are appenment of the string by using the += operator.
+
+> STL string can also be indexed like an array and give number of characters in a string by `(variable_name).size`
+
+
+{%highlight%}
+
+///.....
+
+string s = "John"; // declares the string variable and defines it with string =>John
+
+int i = s.size(); // declares the int variable and defines it with the number of characters in s => 'John' => 5
+
+char c = s[3]; // declares the char variable and defines with the 3rd index/element of s varaible => n
+
+s += " Doe"
+
+{%endhighlight%}
+
+
+## C-Style Structures
+
+
+A storing is useful for storing aggregation of elements.
+
+
+* Unlike and array, the elements of a structure can be of different types. #
+
+* Each member/field of a structure is referred to by a given name.
+
+
+> For example,consider a structure for storing information about an airline passangers. The member/fields of the structure can be passanger name, food preferences, frequent fyler....etc 
+
+
+{%highlight c++%}
+
+
+enum MealType {NO_PREF, REGULAR, LOW_FAT, VEGETARIAN}; // Declares a enumeration type and fills its with meal types
+
+struct Passanger {
+
+    string  name; // Declares this field as a string variable and will store the passanger names
+
+    MealType mealpref; // refrences the enum MealType variable as the field and stores the customer meal preferences from the selection
+
+    bool    isFreqFyler; // declares the field as a boolean variable - so will show FALSE OR  TRUE
+
+    string  freqFylerNo; // declares this field as a string variable and will store the passanger freqfylernumber if boolean true
+
+};
+
+Passanger pass = {"John Smith", VEGETARIAN, true, "293233"}; // initialize a variable pass of this type
+
+};
+
+{%endhighlight %}
+
+
+The individual members of the structure are accessed using `member selection operator`, form of struct_name.member
+
+
+{%highlight c++ %}
+
+
+pass.name = "Richmond"; // Change name
+
+pass.mealPref = REGULAR; // Change meal preference
+
+
+{%endhighlight %}
+
+
+## Pointers, Dynamic Memory, and the "new" Operator
+
+
+Its useful in data structures to to create objects dynamically when the needs arises
+
+
+A large block of memory called the `Free memory` also sometimes called the `Heap Memory`. 
+
+
+The operator `new` dynamically allocates the correct amount of storage for a given object of any given from the free store and returns the pointer to this object.
+
+
+DONT GET TOO CONFUSED BELOW IS AN EXAMPLE,C H I L L 
+
+
+> For example, suppose that in the airline system we encounter a new passanger. We would like to dynamically create a new instance using the new operator.
+
+
+> Let p be a pointre to a Passenger structure. This implies that *p refers to the actual structure; hence, we could access one of its members/fields, eg mealPref, using the expression (*p).mealPref.
+
+
+C++ provides a shorter way to access members using the `"->"` operator
+
+> pointer_name->member       `(is equivalent to)`     (*pointer_name).member
+
+
+>For example we can allocate a new passenger object and inititalize its members as follows 
+
+
+{%highlight c++%}
+
+
+Passenger* p;
+
+//////....
+
+p = new Passenger; // p points to new Passenger
+
+p ->name = "Keaton"; // sets the structure members 
+
+p->mealPref = REGULAR;
+
+p->isFreqFyler = false;
+
+p->freqFylerNo = "NONE";
+
+{%endhighlight%}
+
+
+36/738 (It would....)
