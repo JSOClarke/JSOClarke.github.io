@@ -235,7 +235,7 @@ This is the reason that C++provides a string type as part of its STL `Standard T
 > STL strings are able to be concatenated and they may be compared with eachother levciographically(or dictionary) order. 
 
 
-{%hightlight c++%}
+{%highlight c++%}
 
 string s = "to be"; // declares and defines string
 
