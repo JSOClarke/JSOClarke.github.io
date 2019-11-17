@@ -3,7 +3,7 @@ layout: post
 title: 1. A C++ Primer
 excerpt: "A write up of notes made from the first section of Data Structures and Algorithms book"
 categories: [Data Structures and Algorithms]
-modified: 2019-11-15
+date: 2019-11-15 6:52:19
 comments: true
 ---
 
@@ -106,7 +106,7 @@ There are two main operators used to manipulate pointers. The first returns the 
 
 * First task is performed by the `addressof` operator ‘&’
 
-*Second task is performed by by the `dereferencing `
+* Second task is performed by by the `dereferencing `
 
 {% highlight c++ %}
 
