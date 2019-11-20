@@ -16,6 +16,11 @@ The website im using to learn is `freecodecamps` youtube video `Algorithm Course
 Below is a a basic C++ program that finds the `Answer from a given Base and Exponent `.
 
 
+> I have decided to alongside C++, learn Java, with William Fisets assests and the Book "Data Structures and Algorithms in Java". 
+
+The github repo : https://github.com/williamfiset/Algorithms
+
+
 {% highlight c++ %}
 
 #include<iostream>

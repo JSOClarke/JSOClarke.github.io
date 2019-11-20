@@ -372,3 +372,7 @@ p->freqFylerNo = "NONE";
 
 
 36/738 (It would....)
+
+took a 2 day break from uploading to the website to figure out the best way to go fourth with learning c++ and all of its eco-systems.
+
+I will start properly uploading THURSDAY 21 of Novemeber and will `hopefully` keep on untill Christmas time. 
